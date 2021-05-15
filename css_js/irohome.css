@@ -8,6 +8,15 @@
       box-sizing: border-box;
   }
   
+  @font-face {
+    font-family: myFont;
+    src: url(osaka.woff);
+  }
+  
+  div {
+    font-family: myFont;
+  }
+
   html {
     margin: 0;
     padding: 0;
@@ -16,36 +25,34 @@
   
   body {
     font-family: Josefin Sans, sans-serif;
-      margin: 0;
+    margin: 0;
     padding: 0;
   }
-  
-  .links {
-    --link-size: calc(var(--base-grid)*20);
-    color: var(--colour-black);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
-  }
-  
-  .links__list {
-    position: relative;
-    list-style: none;
-  }
-  
-  .links__item {
-    width: var(--link-size)*3;
-    height: var(--link-size)*3;
+
+  .iro-menu {
     position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: calc(var(--link-size)/-2);
-    margin-left: calc(var(--link-size)/-2);
-    
+    top: 3%;
+    left: 3%;
+  }
+
+  
+  .logo {
+    max-width: 70%;
   }
   
+  .icon-menu {
+    margin:0px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  .icon {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+
   .links__link {
     opacity: 0;
     animation: on-load .3s ease-in-out forwards;
@@ -64,23 +71,12 @@
   }
   
   .links__icon {
-    width: calc(var(--base-grid)*8);
-    height: calc(var(--base-grid)*8);
+    width: calc(var(--base-grid)*17.5);
+    height: calc(var(--base-grid)*17.5);
     transition: all .3s ease-in-out;
     fill: var(--colour-black);
   }
   
-  .links__text {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    height: calc(var(--base-grid)*2);
-    font-size: calc(var(--base-grid)*2);
-    display: none;
-    bottom: calc(var(--base-grid)*8.5);
-    animation: text .3s ease-in-out forwards;
-  }
   
   .links__link:after {
     content: "";
@@ -128,13 +124,75 @@
     }
   }
   
-  @keyframes text {
-    0% {
-      opacity: 0;
-      transform: scale(0.3) translateY(0);
+  
+
+  /*small screen PC, vertical ipad*/
+  @media screen and (max-width: 1024px) {
+    .icon-menu {
+      width: 35%;
     }
-    100% {
-      opacity: 1;
-      transform: scale(1) translateY(calc(var(--base-grid)*5));
+
+    .links__icon {
+      width: calc(var(--base-grid)*12);
+      height: calc(var(--base-grid)*12);
+      transition: all .3s ease-in-out;
+      fill: var(--colour-black);
     }
   }
+
+  /*big screen PC*/
+  @media screen and (min-width: 1281px) {
+    .icon-menu {
+      width: 35%;
+    }
+
+    .links__icon {
+      width: calc(var(--base-grid)*17);
+      height: calc(var(--base-grid)*17);
+      transition: all .3s ease-in-out;
+      fill: var(--colour-black);
+    }
+  }
+
+  /*ipad, horizontal*/
+  @media screen and (max-width: 768px) {
+    .icon-menu {
+      height: 35%;
+      width: 66%;
+    }
+
+    .links__icon {
+      width: calc(var(--base-grid)*12);
+      height: calc(var(--base-grid)*12);
+      transition: all .3s ease-in-out;
+      fill: var(--colour-black);
+    }
+  }
+
+  /*phones from iphone 6 to X*/
+  @media screen and (max-width: 414px) {
+    #iro-menu {
+      height: 150px;
+    }
+
+    .icon-menu {
+      height: 35%;
+    }
+
+    .logo {
+      max-width: 100%;
+    }
+
+    .links__icon {
+      width: calc(var(--base-grid)*7);
+      height: calc(var(--base-grid)*7);
+      transition: all .3s ease-in-out;
+      fill: var(--colour-black);
+    }
+  }
+
+  
+
+  
+
+  
