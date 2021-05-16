@@ -8,17 +8,41 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="../css_js/irohome.css">
-    <link rel="stylesheet" href="../css_js/irointro.css">
+    <script type = "text/javascript">
+        function displayNextImage() {
+            x = (x === images.length - 1) ? 0 : x + 1;
+            document.getElementById("logo-intro").src = images[x];
+        }
+    
+        function displayPreviousImage() {
+            x = (x <= 0) ? images.length - 1 : x - 1;
+            document.getElementById("logo-intro").src = images[x];
+        }
+    
+        function startTimer() {
+            setInterval(displayNextImage, 1000);
+        }
+    
+        var images = [], x = -1;
+        images[0] = "../images/icon/logo1.svg";
+        images[1] = "../images/icon/logo2.svg";
+        images[2] = "../images/icon/logo3.svg";
+    </script>
 </head>
-<body>
-    <div class="container icon-menu text-center">
-        <div id="cf">
-            <img class="top" src="../images/icon/logo1.svg" style="max-width: 50%;">
-            <img class="bottom" src="../images/icon/logo2.svg" style="max-width: 50%;">
+<body style="background-color: #FFF8F8;" onload = "startTimer()">
+    <div class="container irointro text-center">
+        <div class="p-4">
+            <img id="logo-intro" src="../images/icon/logo1.svg"/>
         </div>
         <br>
-        <div>
-            <p style="font-size: 20px;">Let us take you through Japan through the color spectrum</p>
+        <hr style="width: 50%; margin: auto;">
+        <div class="p-4">
+            <p style="font-size: 20px;">Let's explore Japan through the color spectrum!</p>
+        </div>
+        <div class="p-4">
+            <a href="./homepage.html" class="button3">Let's go!</a>
         </div>
     </div>
+    
+    
 </body>

@@ -21,6 +21,7 @@
     margin: 0;
     padding: 0;
     background-position: 100%;
+    background-color: #FFF8F8;
   }
   
   body {
@@ -28,18 +29,52 @@
     margin: 0;
     padding: 0;
   }
+  /*iro intro page*/
 
-  .iro-menu {
-    position: absolute;
-    top: 3%;
-    left: 3%;
+  .irointro {
+    opacity: 0;
+    animation: intro-load .8s ease-in-out forwards;
+    width: 40%;
   }
 
-  
+
+  #logo-intro {
+    width: 60%;
+  }
+
   .logo {
     max-width: 70%;
   }
+
+  a.button3{
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    font-size: 32px;
+    color:#FFFFFF;
+    background-color:#951f1f;
+    text-align:center;
+    transition: all 0.3s;
+    }
+
+    a.button3:hover{
+    background-color:#701818;
+    }
   
+    
+
+    /*iro main page*/
+  
+    .iro-menu {
+      position: absolute;
+      top: 3%;
+      left: 3%;
+    }
+    
   .icon-menu {
     margin:0px auto;
     position: absolute;
@@ -47,6 +82,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
   .icon {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -121,6 +157,36 @@
     100% {
       opacity: 1;
       transform: scale(1);
+    }
+  }
+
+  @keyframes on-load {
+    0% {
+      opacity: 0;
+      transform: scale(.3);
+    }
+    70% {
+      opacity: .7;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes intro-load {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    70% {
+      opacity: .7;
+      transform: translateY(40%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(35%);
     }
   }
   
