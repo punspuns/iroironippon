@@ -199,8 +199,8 @@
     }
 
     .links__icon {
-      width: calc(var(--base-grid)*12);
-      height: calc(var(--base-grid)*12);
+      width: calc(var(--base-grid)*10);
+      height: calc(var(--base-grid)*10);
       transition: all .3s ease-in-out;
       fill: var(--colour-black);
     }
