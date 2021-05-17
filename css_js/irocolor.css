@@ -10,6 +10,19 @@
     --contrast-color: #292631;
   }
 
+  html {
+    height: 100vh;
+  }
+
+  canvas {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    max-height: 100vh;
+    max-width: 100vw;
+    transform: translate(-50%, -50%);
+  }
+
   @font-face {
     font-family: myFont;
     src: url(osaka.woff);
@@ -28,11 +41,13 @@
   }
 
   .maru {
+    opacity: 0;
     width: calc(var(--base-grid)*5);
     position: absolute;
     left: calc(var(--base-grid)*4);
     top: 10%;
-    animation: maru .6s linear forwards;
+    z-index: -1;
+    animation: on-load .8s ease-in-out forwards, maru .8s linear 2s forwards;
   }
 
   .overlay h2{
@@ -43,22 +58,59 @@
     font-size: 180px;
     font-family: myFont;
     color: antiquewhite;
-    animation: heading .6s linear forwards;
+    animation: on-load .8s ease-in-out forwards, heading .8s linear 2s forwards;
+  }
+
+  .image-content {
+    opacity: 0;
+    width: calc(var(--base-grid)*5*0.8);
+    position: absolute;
+    left: calc(var(--base-grid)*2.5 - 20px);
+    top: 8%;
+    animation: image-content .8s linear 2.5s forwards;
+  }
+
+  .text-content {
+    opacity: 0;
+    width: calc(var(--base-grid)*5*0.8);
+    position: absolute;
+    right: calc(var(--base-grid)*2.5);
+    top: 25%;
+    animation: image-content .8s linear 2s forwards;
+  }
+  .text-content h3{
+    color: #F1C907;
+  }
+
+  .text-content h4, p{
+    color: #FFF8F8;
+  }
+
+  .kanji {
+    font-family: myFont;
+    font-size: 250px;
+    overflow: hidden;
+    color: #FFF8F8;
+    opacity: 0;
+    position: absolute;
+    right: calc(var(--base-grid)*0.5);
+    top: 50%;
+    animation: kanji .8s linear 4s forwards;
   }
 
   @keyframes heading {
     0% {
-      transform: scale(.9) translateX(-200px);
+      transform: scale(.95) translateX(-50px);
     }
     25% {
-      transform: scale(.8) translateX(-400px);
+      transform: scale(.8) translateX(-300px);
     }
     50% {
       transform: scale(.7) translateX(-600px);
       
     }
     75% {
-      transform: scale(.6) translateX(-800px);
+      transform: scale(.6) translateX(-850px);
      
     }
     100% {
@@ -69,23 +121,65 @@
 
   @keyframes maru {
     0% {
-      transform: translateX(-100px);
+      transform: scale(.9) translateX(-5px);
     }
     25% {
-      transform: translateX(-200px);
+      transform: scale(.8) translateX(-50px);
     }
     50% {
-      transform: translateX(-400px);
+      transform: scale(.8) translateX(-100px);
       
     }
     75% {
-      transform: translateX(-600px);
+      transform: scale(.8) translateX(-200px);
      
     }
     100% {
-      transform: translateX(-800px);
+      transform: scale(.8) translateX(-260px);
       
     }
+  }
+
+  @keyframes on-load {
+    0% {
+      opacity: 0;
+      transform: scale(.3);
+    }
+    70% {
+      opacity: .7;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes image-content {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: .6;
+    }
+    100% {
+      opacity: 1;
+      
+    }
+  }
+
+  @keyframes kanji {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: .05;
+    }
+    100% {
+      opacity: .1;
+      
+    }
+  }
 
   /*small screen PC, vertical ipad*/
   @media screen and (max-width: 1366px) {
