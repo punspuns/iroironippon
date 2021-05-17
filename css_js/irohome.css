@@ -33,8 +33,7 @@
 
   .irointro {
     opacity: 0;
-    animation: intro-load .8s ease-in-out forwards;
-    width: 40%;
+    animation: intro-load .8s linear forwards;
   }
 
 
@@ -193,9 +192,9 @@
   
 
   /*small screen PC, vertical ipad*/
-  @media screen and (max-width: 1366px) {
+  @media screen and (max-width: 1440px) {
     .icon-menu {
-      width: 35%;
+      width: 40%;
     }
 
     .logo {
@@ -211,7 +210,7 @@
   }
 
   /*big screen PC*/
-  @media screen and (min-width: 1367px) {
+  @media screen and (min-width: 1441px) {
     .icon-menu {
       width: 35%;
     }
