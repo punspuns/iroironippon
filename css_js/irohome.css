@@ -193,9 +193,13 @@
   
 
   /*small screen PC, vertical ipad*/
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1366px) {
     .icon-menu {
       width: 35%;
+    }
+
+    .logo {
+      max-width: 60%;
     }
 
     .links__icon {
@@ -207,7 +211,7 @@
   }
 
   /*big screen PC*/
-  @media screen and (min-width: 1281px) {
+  @media screen and (min-width: 1367px) {
     .icon-menu {
       width: 35%;
     }
