@@ -215,13 +215,13 @@
   @media screen and (max-width: 1366px) {
   #maru {
     width: 35vw;
-    top: 14vw;
+    top: 14vh;
     left: 33vw;
   }
 
   #color-name{
     width: 100px;
-    top: 17vw;
+    top: 14.5vh;
     left: 45vw;
     font-size: 12vw;
     line-height: 1.25;
