@@ -13,6 +13,8 @@
   html,body {
     width:100vw;
     height:100vh;
+    margin: 0;
+    padding: 0;
 }
   canvas {
     position: fixed;
@@ -40,7 +42,7 @@
     background-color: #151226;
   }
 
-  #maru, #color-name {
+  #maru, #color-name, #image-content {
     position: absolute;
   }
   #maru {
@@ -66,21 +68,18 @@
 
   #image-content {
     opacity: 0;
-    width: calc(var(--base-grid)*5*0.8);
-    /* position: absolute;
-    left: calc(var(--base-grid)*2.5 - 20px);
-    top: 8%; */
+    width: calc(30vw*0.9);
+    top: 21vh;
+    left: 16.5vw;
     animation: image-content .8s linear 2.5s forwards;
   }
 
   .text-content {
     opacity: 0;
-    width: calc(var(--base-grid)*5*0.8);
-    /* position: absolute;
-    right: calc(var(--base-grid)*2.5);
-    top: 25%; */
+    width: 70%;
     animation: image-content .8s linear 2s forwards;
   }
+
   .text-content h3{
     color: #F1C907;
   }
@@ -203,9 +202,8 @@
     #image-content {
       opacity: 0;
       width: calc(30vw*0.9);
-      /* position: absolute;
-      left: calc(var(--base-grid)*2.5 - 20px);
-      top: 8%; */
+      top: 21vh;
+      left: 16.5vw;
       animation: image-content .8s linear 2.5s forwards;
     }
   }
@@ -215,17 +213,23 @@
   @media screen and (max-width: 1366px) {
   #maru {
     width: 35vw;
-    top: 14vh;
+    top: 24vh;
     left: 33vw;
   }
 
   #color-name{
     width: 100px;
-    top: 14.5vh;
+    top: 26vh;
     left: 45vw;
     font-size: 12vw;
     line-height: 1.25;
 
+  }
+
+  #image-content {
+    width: 34vw;
+    top: 16vh;
+    left: 15.5vw;
   }
   
   }
@@ -252,6 +256,17 @@
       font-size: 20vw;
       line-height: 1.25;
       animation: on-load .8s ease-in-out forwards, heading .2s linear 2s forwards;
+    }
+
+    #image-content {
+      width: 70.25vw;
+      top: 10vh;
+      left: 15.5vw;
+    }
+
+    .text-content {
+      position: relative;
+      width: 90%;
     }
 
     @keyframes heading {
