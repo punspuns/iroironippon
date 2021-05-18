@@ -5,15 +5,15 @@
   }
   
   :root {
-    --base-grid: 100%/14;
+    --base-grid: 100vw/14;
     --secondary-color: #151226;
     --contrast-color: #292631;
   }
 
-  html {
-    height: 100vh;
-  }
-
+  html,body {
+    width:100vw;
+    height:100vh;
+}
   canvas {
     position: fixed;
     left: 50%;
@@ -40,27 +40,31 @@
     background-color: #151226;
   }
 
-  .maru {
-    opacity: 1;
+  #maru, #color-name {
     position: absolute;
-    /* left: calc(var(--base-grid)*4); */
+  }
+  #maru {
+    opacity: 1;
+    width: 20vw;
+    top: 10vw;
+    left: 33vw;
     z-index: -2;
-    /* animation: on-load .8s ease-in-out forwards, maru .8s linear 2s forwards; */
+    animation: on-load .8s ease-in-out forwards, maru .8s linear 2s forwards;
   }
 
-  .overlay h2{
-    /* position: absolute;
+  #color-name{
+    width: 100px;
     top: calc(var(--base-grid)*2);
-    left: calc(var(--base-grid)*2); */
-    position: absolute;
-    font-size: 180px;
+    left: calc(var(--base-grid)*6.1);
+    font-size: 175px;
     font-family: myFont;
+    line-height: 1.25;
     color: antiquewhite;
     z-index: -1;
-    /* animation: on-load .8s ease-in-out forwards, heading .8s linear 2s forwards; */
+    animation: on-load .8s ease-in-out forwards, heading .8s linear 2s forwards;
   }
 
-  .image-content {
+  #image-content {
     opacity: 0;
     width: calc(var(--base-grid)*5*0.8);
     /* position: absolute;
@@ -99,42 +103,42 @@
 
   @keyframes heading {
     0% {
-      transform: scale(.95) translateX(-50px);
+      transform: scale(.95) translateX(-0vw);
     }
     25% {
-      transform: scale(.8) translateX(-300px);
+      transform: scale(.8) translateX(-20vw);
     }
     50% {
-      transform: scale(.7) translateX(-600px);
+      transform: scale(.7) translateX(-40vw);
       
     }
     75% {
-      transform: scale(.6) translateX(-850px);
+      transform: scale(.6) translateX(-60vw);
      
     }
     100% {
-      transform: scale(.5) translateX(-1050px);
+      transform: scale(.5) translateX(-85vw);
       
     }
   }
 
   @keyframes maru {
     0% {
-      transform: scale(.9) translateX(-5px);
+      transform: scale(.9) translateX(-0vw);
     }
     25% {
-      transform: scale(.8) translateX(-50px);
+      transform: scale(.9) translateX(-5vw);
     }
     50% {
-      transform: scale(.8) translateX(-100px);
+      transform: scale(.9) translateX(-10vw);
       
     }
     75% {
-      transform: scale(.8) translateX(-200px);
+      transform: scale(.9) translateX(-15vw);
      
     }
     100% {
-      transform: scale(.8) translateX(-260px);
+      transform: scale(.9) translateX(-20vw);
       
     }
   }
@@ -180,30 +184,53 @@
     }
   }
 
+  /*big screen PC*/
+  @media screen and (min-width: 1367px) {
+    #maru {
+      width: 30vw;
+      top: 24vh;
+      left: 33vw;
+    }
+  
+    #color-name{
+      width: 100px;
+      top: 29vh;
+      left: 43vw;
+      font-size: 10vw;
+      line-height: 1.25;
+    }
+
+    #image-content {
+      opacity: 0;
+      width: calc(30vw*0.9);
+      /* position: absolute;
+      left: calc(var(--base-grid)*2.5 - 20px);
+      top: 8%; */
+      animation: image-content .8s linear 2.5s forwards;
+    }
+  }
+
+  
   /*small screen PC, vertical ipad*/
   @media screen and (max-width: 1366px) {
-    .overlay h2{
-      position: absolute;
-      top: calc(var(--base-grid)*2);
-      left: 40%;
-      width: calc(var(--base-grid)*1.5);
-      font-size: 180px;
-      font-family: myFont;
-      color: antiquewhite;
+  #maru {
+    width: 35vw;
+    top: 14vw;
+    left: 33vw;
   }
-  .maru {
-    width: calc(var(--base-grid)*5);
-    position: absolute;
-    left: calc(var(--base-grid)*4);
-    top: 10%;
+
+  #color-name{
+    width: 100px;
+    top: 17vw;
+    left: 45vw;
+    font-size: 12vw;
+    line-height: 1.25;
+
   }
   
   }
 
-  /*big screen PC*/
-  @media screen and (min-width: 1367px) {
-    
-  }
+  
 
   /*ipad, horizontal*/
   @media screen and (max-width: 768px) {
@@ -212,6 +239,52 @@
 
   /*phones from iphone 6 to X*/
   @media screen and (max-width: 414px) {
-    
+    #maru {
+      width: 70vw;
+      top: 30vh;
+      left: 15vw;
+    }
+  
+    #color-name{
+      width: 12vw;
+      top: 35vh;
+      left: 40vw;
+      font-size: 20vw;
+      line-height: 1.25;
+      animation: on-load .8s ease-in-out forwards, heading .2s linear 2s forwards;
+    }
+
+    @keyframes heading {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: .5;
+      }
+      100% {
+        opacity: 0;
+    }
+  }
+  
+    @keyframes maru {
+      0% {
+        transform: translateY(-0vh);
+      }
+      25% {
+        transform: translateY(-4vh);
+      }
+      50% {
+        transform: translateY(-8vh);
+        
+      }
+      75% {
+        transform: translateY(-12vh);
+       
+      }
+      100% {
+        transform: translateY(-16vh);
+        
+      }
+    }
   } 
   
