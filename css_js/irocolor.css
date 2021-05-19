@@ -35,10 +35,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 100%;
+    height: 200%;
     z-index: -10;
     background-color: #151226;
   }
+
 
   #maru, #color-name, #image-content {
     position: absolute;
@@ -48,19 +49,15 @@
     width: 20vw;
     top: 10vw;
     left: 33vw;
-    z-index: -2;
     animation: on-load .8s ease-in-out forwards, maru .8s linear 2s forwards;
   }
 
   #color-name{
     width: 100px;
-    top: calc(var(--base-grid)*2);
-    left: calc(var(--base-grid)*6.1);
     font-size: 175px;
     font-family: myFont;
     line-height: 1.25;
     color: antiquewhite;
-    z-index: -1;
     animation: on-load .8s ease-in-out forwards, heading .8s linear 2s forwards;
   }
 
@@ -71,6 +68,7 @@
     left: 16.5vw; */
     animation: image-content .8s linear 2.5s forwards;
   }
+
 
   .text-content {
     opacity: 0;
@@ -87,6 +85,14 @@
     color: #FFF8F8;
   }
 
+  #samurai {
+    
+  }
+
+  #yokai {
+    
+  }
+
   .kanji {
     font-family: myFont;
     font-size: 250px;
@@ -98,6 +104,8 @@
     top: 50%;
     animation: kanji .8s linear 4s forwards;
   }
+
+       
 
   @keyframes heading {
     0% {
@@ -186,23 +194,24 @@
   @media screen and (min-width: 1367px) {
     #maru {
       width: 30vw;
-      /* top: 24vh;
-      left: 33vw; */
+      top: 7vh;
+      left: 33vw;
+      transform: translate(-50%, -50%);
     }
   
     #color-name{
-      width: 100px;
-      /* top: 29vh;
-      left: 43vw; */
+      width: 200px;
+      top: 15vh;
+      left: 43vw;
       font-size: 10vw;
       line-height: 1.25;
     }
 
     #image-content {
       opacity: 0;
-      width: calc(30vw*0.8);
-      /* top: 21vh;
-      left: 16.5vw; */
+      width: calc(30vw*0.9);
+      top: 10vh;
+      left: 16.5vw;
       animation: image-content .8s linear 2.5s forwards;
     }
   }
@@ -212,24 +221,26 @@
   @media screen and (max-width: 1366px) {
   #maru {
     width: 35vw;
-    /* top: 24vh;
-    left: 33vw; */
+    top: 7vh;
+    left: 33vw;
+    /* transform: translate(-50%, -50%); */
   }
 
   #color-name{
     width: 100px;
-    /* top: 26vh;
-    left: 45vw; */
+    top: 16vh;
+    left: 45vw;
     font-size: 12vw;
     line-height: 1.25;
 
   }
 
   #image-content {
-    width: 34vw;
-    /* top: 16vh;
-    left: 15.5vw; */
+    width: calc(35vw*0.9);
+    top: 10vh;
+    left: 16.5vw;
   }
+  
   
   }
 
@@ -244,13 +255,13 @@
   @media screen and (max-width: 414px) {
     #maru {
       width: 70vw;
-      top: 30vh;
+      top: 21vh;
       left: 15vw;
     }
   
     #color-name{
       width: 12vw;
-      top: 35vh;
+      top: 29vh;
       left: 40vw;
       font-size: 20vw;
       line-height: 1.25;
@@ -258,14 +269,15 @@
     }
 
     #image-content {
-      width: 70.25vw;
-      top: 10vh;
-      left: 15.5vw;
+      width: 70vw;
+      top: 5vh;
+      left: 15vw;
     }
 
     .text-content {
-      position: relative;
       width: 90%;
+      position: absolute;
+      top: 40vh;
     }
 
     @keyframes heading {
