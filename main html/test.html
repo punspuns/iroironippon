@@ -10,10 +10,11 @@
 
   <link rel="stylesheet" href="../css_js/irohome.css">
   <link rel="stylesheet" href="../css_js/irocolor.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js"></script> -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="../css_js/irocolor.js"></script>
-
+  
 </head>
 
 <body class="overlay">
@@ -33,9 +34,9 @@
         
       </a>
     </nav>
-    <div class="row text-center position-fixed" style="padding: 0;">
+    <div class="row text-center " style="padding: 0;">
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-        <div class="d-flex flex-column justify-content-center align-items-center">
+        <div class="d-flex flex-column justify-content-center align-items-center position-fixed">
           <div class="image-content">
             <img id="maru" src="../images/content-image/gray-circle.svg">
             <img id="image-content" src="../images/content-image/black-samurai.svg">
@@ -44,55 +45,59 @@
 
         </div>
       </div>
-      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-        <div class="d-flex flex-column min-vh-90 justify-content-center align-items-center">
-          <div class="text-content position-relative" id="samurai">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+        <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center position-fixed">
+            <div class="text-content " id="samurai">
+              <div data-aos="fade-up" data-aos-delay="2000" data-aos-anchor-placement="bottom-bottom" >
+                <h4>Black</h4>
+                <h3 class="pb-3" id="name">Samurai</h3>
+                <hr width="70px" style="color: antiquewhite; margin: auto;">
+                <p class="p-3" id="detail">Samurai were the hereditary military nobility and officer caste of medieval and early-modern
+                Japan from the 12th century to their abolition in the 1870s.<br>
+  
+                They were the well-paid retainers of the daimyo. They had high prestige and special privileges such as
+                wearing
+                two swords.</p>
+              </div>
+              
+              
+            </div>
+            
+        </div>
+        <div class="text-content" id="yokai">
+          <div data-aos="fade-up" data-aos-delay="100">
             <h4>Black</h4>
-            <h3 class="pb-3">Samurai</h3>
+            <h3 class="pb-3" id="name">Yokai</h3>
             <hr width="70px" style="color: antiquewhite; margin: auto;">
-            <p class="p-3">Samurai were the hereditary military nobility and officer caste of medieval and early-modern
-              Japan from the 12th century to their abolition in the 1870s.<br>
-
-              They were the well-paid retainers of the daimyo. They had high prestige and special privileges such as
-              wearing
-              two swords.</p>
-
-          </div>
-
-          <div class="text-content position-relative" id="yokai">
-            <h4>Black</h4>
-            <h3 class="pb-3">Yokai</h3>
-            <hr width="70px" style="color: antiquewhite; margin: auto;">
-            <p class="p-3">Yōkai (妖怪, "ghost", "phantom", "strange apparition") are a class of supernatural monsters and
+            <p class="p-3" id="detail">Yōkai (妖怪, "ghost", "phantom", "strange apparition") are a class of supernatural monsters and
               spirits in Japanese folklore.
               <br>
               The characteristics of yōkai range diversely from malevolent and mischievous entities believed to cause
               misfortune and harm, to those who are considered to bring good fortune to those who encounter them.</p>
           </div>
-
+        </div>  
+        <div class="kanji" id="kanji-1">
+          <p>侍</p>
         </div>
+        <div class="kanji" id="kanji-1">
+          <p>妖怪</p>
+        </div>
+        
+        
+        </div>
+        
+        
 
       </div>
     </div>
 
   </div>
 
-  <div class="kanji section section-1">
-    <p>侍</p>
-  </div>
+  
 
-  <!-- <script>
-    $(document).ready(function () {
-      $('#fullpage').fullpage({
-        autoScrolling: true,
-        scrollHorizontally: true,
-        fadingEffect: true
-      });
-
-      $.fn.fullpage.setAllowScrolling(false);
-    });
-  </script> -->
-
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

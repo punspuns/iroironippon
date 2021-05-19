@@ -71,10 +71,10 @@
 
 
   .text-content {
-    opacity: 0;
+    /* opacity: 0; */
     width: 70%;
     margin: 0 auto;
-    animation: image-content .8s linear 2s forwards;
+    /* animation: image-content .8s linear 2s forwards; */
   }
 
   .text-content h3{
@@ -86,10 +86,11 @@
   }
 
   #samurai {
-    
+    height: 55vh;
   }
 
   #yokai {
+    height: 100vh;
     
   }
 
@@ -98,11 +99,11 @@
     font-size: 250px;
     overflow: hidden;
     color: #FFF8F8;
-    opacity: 0;
+    opacity: 0.25;
     position: absolute;
     right: calc(var(--base-grid)*0.5);
-    top: 50%;
-    animation: kanji .8s linear 4s forwards;
+    top: 25%;
+    /* animation: kanji .4s linear 4s forwards; */
   }
 
        
