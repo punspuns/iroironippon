@@ -61,11 +61,16 @@
   }
 
   #image-content {
-    opacity: 0;
+    display: none;
     width: calc(30vw*0.9);
     /* top: 21vh;
     left: 16.5vw; */
-    animation: image-content .8s linear 2.5s forwards;
+    /* animation: image-content .8s linear 2.5s forwards; */
+  }
+
+
+  .image-2 {
+    display: none;
   }
 
 
@@ -93,6 +98,10 @@
     display: none; 
   }
 
+  .kanji {
+    display: none;
+  }
+  
   #kanji-1 {
     font-family: myFont;
     font-size: 250px;
@@ -223,11 +232,11 @@
     }
 
     #image-content {
-      opacity: 0;
+      
       width: calc(30vw*0.9);
       top: calc(100vh/14 + 3vh);
       left: 16.5vw;
-      animation: image-content .8s linear 2.5s forwards;
+      /* animation: image-content .8s linear 2.5s forwards; */
     }
 
     .min-vh {

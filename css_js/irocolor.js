@@ -1,3 +1,7 @@
+$(document).ready(function () {
+  $('#image-content').delay(2000).fadeIn(1000).removeClass('hidden');
+  $('.kanji').delay(2000).fadeIn(1000).removeClass('hidden');
+});
 
 $(window).scroll(function() {
     var winHeight = $(this).height();
@@ -6,19 +10,20 @@ $(window).scroll(function() {
     var elemHeight = $("#kanji-1").height();
     var elementTop = $("#kanji-1").position().top; 
 
-
      
     if (elementTop < scrollTop + winHeight && scrollTop > elementTop + elemHeight){
-		  $("#samurai").fadeOut();
-      $("#samurai").hide(200);
+		  $("#samurai, .image-1").fadeOut();
+      $("#samurai, .image-1").hide(200);
 	}
 		
     else{
-		  $("#samurai").fadeIn();
+		  $("#samurai, .image-1").fadeIn();
+      
 	}
     
     
 });
+
 
 $(window).scroll(function() {
   var winHeight = $(this).height();
@@ -27,13 +32,16 @@ $(window).scroll(function() {
   var elemHeight2 = $("#kanji-2").height();
   var elementTop2 = $("#kanji-2").position().top; 
 
+
   if (elementTop2 < scrollTop + winHeight && scrollTop < elementTop2 + elemHeight2){
-    $("#yokai").fadeIn();
+    $("#yokai, .image-2").fadeIn();
+    
 }
   
   else{
-    $("#yokai").fadeOut();
-    $("#yokai").hide(100);
+    $("#yokai, .image-2").fadeOut();
+    $("#yokai, .image-2").hide(200);
+    
 }
   
   
