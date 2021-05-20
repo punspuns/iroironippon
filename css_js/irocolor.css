@@ -126,6 +126,51 @@
     /* animation: kanji .4s linear 4s forwards; */
   }
        
+  .button-control {
+    position: absolute;
+    bottom: 33vh;
+    display: none;
+  }
+
+  .color-icon {
+    width: 4vw;
+    height: 4vw;
+    transition: all .3s ease-in-out;
+  }
+
+  .color-link {
+    width: 15vw;
+  }
+
+  .color-link:after {
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s cubic-bezier(.53,-.67,.73,.74);
+    transform: none;
+    opacity: 0;
+  }
+  
+  .color-link:hover .color-icon {
+    transition: all .3s ease-in-out;
+    transform: translateY(-8px);
+  }
+  
+  .color-link:hover:after {
+    transition: all .3s cubic-bezier(.37,.74,.15,1.65);
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  #prev {
+    top: 36%; left: 26%;
+  }
+
+  #next {
+    top: 36%; left: 45%;
+  }
 
   @keyframes heading {
     0% {
@@ -307,6 +352,24 @@
     top: calc(50vh*4.5);
     /* animation: kanji .4s linear 4s forwards; */
   }
+
+  .button-control {
+    bottom: 10vh;
+    left: 10vw;
+  }
+
+  .color-icon {
+    width: 8vw;
+    height: 8vh;
+  }
+
+  #prev {
+    top: 30%; left: 10%;
+  }
+
+  #next {
+    top: 30%; left: 48%;
+  }
   
   
   }
@@ -321,31 +384,32 @@
   /*phones from iphone 6 to X*/
   @media screen and (max-width: 414px) {
     .overlay {
-      height: 380vh;
+      height: 345vh;
     }
     #maru {
-      width: 70vw;
+      width: 60vw;
       top: 21vh;
-      left: 15vw;
+      left: 17vw;
     }
   
     #color-name{
       width: 12vw;
-      top: calc(100vh/4);
-      left: 40vw;
+      top: calc(100vh/4.25);
+      left: 37vw;
       font-size: 20vw;
       line-height: 1.25;
       animation: on-load .8s ease-in-out forwards, heading .2s linear 2s forwards;
     }
 
     #image-content {
-      width: 70vw;
+      width: 60vw;
       top: 5vh;
-      left: 15vw;
+      left: 17vw;
     }
 
     .text-content {
       width: 90%;
+      font-size: 14px;
       /* position: absolute; */
       top: 40vh;
     }
@@ -368,7 +432,37 @@
     }
 
     .min-vh {
-      min-height: 137vh;
+      min-height: 130vh;
+    }
+
+    .button-control {
+      position: absolute;
+      bottom: 40vh;
+      left: -15vw;
+      width: 100vw;
+      height: 20vh;
+      display: none;
+    }
+
+    .color-link {
+      width: 66vw;
+      font-size: 14px;
+    }
+
+    #prev {
+      top: 43%; left: 26%;
+      width: 50vw;
+    }
+
+    #next {
+      top: 43%; left: -150%;
+      width: 50vw;
+    }
+
+
+    .color-icon {
+      width: 15vw;
+      height: 15vh;
     }
 
     @keyframes heading {

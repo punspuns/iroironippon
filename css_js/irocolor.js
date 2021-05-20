@@ -43,7 +43,25 @@ $(window).scroll(function() {
     $("#yokai, .image-2").hide(200);
     
 }
-  
+
   
 });
 
+$(window).scroll(function() {
+  var winHeight = $(this).height();
+  var scrollTop = $(this).scrollTop();
+
+  var elementTop2 = $("#kanji-2").position().top; 
+
+
+  if (scrollTop + winHeight >= winHeight + elementTop2 - winHeight/16){
+    $(".button-control").fadeIn(800).removeClass('hidden');
+    
+}
+  
+  else{
+    $(".button-control").fadeOut();
+    $(".button-control").hide(200);
+    
+}
+});

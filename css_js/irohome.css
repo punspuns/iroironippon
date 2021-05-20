@@ -199,7 +199,7 @@
     }
 
     .logo {
-      max-width: 60%;
+      max-width: 80%;
     }
 
     .links__icon {
@@ -214,6 +214,10 @@
   @media screen and (min-width: 1441px) {
     .icon-menu {
       width: 35%;
+    }
+
+    .logo {
+      max-width: 100%;
     }
 
     .links__icon {
