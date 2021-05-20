@@ -35,7 +35,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 200%;
+    height: 300vh;
     z-index: -10;
     background-color: #151226;
   }
@@ -87,14 +87,15 @@
 
   #samurai {
     height: 55vh;
+    display: none; 
   }
 
   #yokai {
-    height: 100vh;
-    
+    height: 55vh;
+    display: none; 
   }
 
-  .kanji {
+  #kanji-1 {
     font-family: myFont;
     font-size: 250px;
     overflow: hidden;
@@ -102,10 +103,21 @@
     opacity: 0.25;
     position: absolute;
     right: calc(var(--base-grid)*0.5);
-    top: 25%;
+    top: 60vh;
     /* animation: kanji .4s linear 4s forwards; */
   }
 
+  #kanji-2 {
+    font-family: myFont;
+    font-size: 180px;
+    overflow: hidden;
+    color: #FFF8F8;
+    opacity: 0.25;
+    position: absolute;
+    right: calc(var(--base-grid)*0.5);
+    top: 200vh;
+    /* animation: kanji .4s linear 4s forwards; */
+  }
        
 
   @keyframes heading {
@@ -215,6 +227,10 @@
       left: 16.5vw;
       animation: image-content .8s linear 2.5s forwards;
     }
+
+    .min-vh {
+      min-height: 100vh!important;
+    }
   }
 
   
@@ -229,7 +245,7 @@
 
   #color-name{
     width: 100px;
-    top: 16vh;
+    top: 10vh;
     left: 45vw;
     font-size: 12vw;
     line-height: 1.25;
@@ -240,6 +256,32 @@
     width: calc(35vw*0.9);
     top: 10vh;
     left: 16.5vw;
+  }
+
+  .min-vh {
+    min-height: 85vh!important;
+  }
+
+  #samurai {
+    height: 55vh;
+  }
+
+  #yokai {
+    height: 55vh;
+  }
+
+  #kanji-1 {
+    font-size: 230px;
+    right: calc(var(--base-grid)*0.5);
+    top: 60vh;
+    /* animation: kanji .4s linear 4s forwards; */
+  }
+
+  #kanji-2 {
+    font-size: 160px;
+    right: calc(var(--base-grid)*0.5);
+    top: 230vh;
+    /* animation: kanji .4s linear 4s forwards; */
   }
   
   
