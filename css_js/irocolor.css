@@ -256,7 +256,7 @@
 
   
   /*small screen PC, vertical ipad*/
-  @media screen and (max-width: 1366px) {
+  @media screen and (min-width: 769px) and (max-width: 1366px) {
     .overlay {
       height: 320vh;
     }
@@ -320,6 +320,9 @@
 
   /*phones from iphone 6 to X*/
   @media screen and (max-width: 414px) {
+    .overlay {
+      height: 380vh;
+    }
     #maru {
       width: 70vw;
       top: 21vh;
@@ -328,7 +331,7 @@
   
     #color-name{
       width: 12vw;
-      top: 29vh;
+      top: calc(100vh/4);
       left: 40vw;
       font-size: 20vw;
       line-height: 1.25;
@@ -343,8 +346,29 @@
 
     .text-content {
       width: 90%;
-      position: absolute;
+      /* position: absolute; */
       top: 40vh;
+    }
+
+    .kanji {
+      z-index: -1;
+    }
+    #kanji-1 {
+      font-size: 180px;
+      right: calc(var(--base-grid)*0.5);
+      top: 70vh;
+      /* animation: kanji .4s linear 4s forwards; */
+    }
+  
+    #kanji-2 {
+      font-size: 100px;
+      right: calc(var(--base-grid)*0.25);
+      top: calc(70vh*3.5);
+      /* animation: kanji .4s linear 4s forwards; */
+    }
+
+    .min-vh {
+      min-height: 137vh;
     }
 
     @keyframes heading {
