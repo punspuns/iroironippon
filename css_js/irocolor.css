@@ -236,6 +236,9 @@
   
   /*small screen PC, vertical ipad*/
   @media screen and (max-width: 1366px) {
+    .overlay {
+      height: 315vh;
+    }
   #maru {
     width: 35vw;
     top: 7vh;
@@ -273,16 +276,16 @@
   }
 
   #kanji-1 {
-    font-size: 230px;
+    font-size: 200px;
     right: calc(var(--base-grid)*0.5);
-    top: 60vh;
+    top: 50vh;
     /* animation: kanji .4s linear 4s forwards; */
   }
 
   #kanji-2 {
-    font-size: 160px;
+    font-size: 130px;
     right: calc(var(--base-grid)*0.5);
-    top: 250vh;
+    top: calc(50vh*4);
     /* animation: kanji .4s linear 4s forwards; */
   }
   
