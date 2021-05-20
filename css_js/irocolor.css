@@ -35,7 +35,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 300vh;
     z-index: -10;
     background-color: #151226;
   }
@@ -87,7 +86,6 @@
 
   #samurai {
     height: 55vh;
-    display: none; 
   }
 
   #yokai {
@@ -205,16 +203,20 @@
 
   /*big screen PC*/
   @media screen and (min-width: 1367px) {
+    .overlay {
+      height: 340vh;
+    }
+
     #maru {
       width: 30vw;
-      top: 7vh;
+      top: calc(100vh/14);
       left: 33vw;
       transform: translate(-50%, -50%);
     }
   
     #color-name{
       width: 200px;
-      top: 15vh;
+      top: calc(100vh/7);
       left: 43vw;
       font-size: 10vw;
       line-height: 1.25;
@@ -223,7 +225,7 @@
     #image-content {
       opacity: 0;
       width: calc(30vw*0.9);
-      top: 10vh;
+      top: calc(100vh/14 + 3vh);
       left: 16.5vw;
       animation: image-content .8s linear 2.5s forwards;
     }
@@ -231,24 +233,34 @@
     .min-vh {
       min-height: 100vh!important;
     }
+
+    #kanji-1 {
+      top: 60vh;
+      /* animation: kanji .4s linear 4s forwards; */
+    }
+  
+    #kanji-2 {
+      top: calc(60vh*4);
+      /* animation: kanji .4s linear 4s forwards; */
+    }
   }
 
   
   /*small screen PC, vertical ipad*/
   @media screen and (max-width: 1366px) {
     .overlay {
-      height: 315vh;
+      height: 320vh;
     }
   #maru {
     width: 35vw;
-    top: 7vh;
+    top: calc(100vh/12);
     left: 33vw;
     /* transform: translate(-50%, -50%); */
   }
 
   #color-name{
     width: 100px;
-    top: 10vh;
+    top: calc(100vh/7.5);
     left: 45vw;
     font-size: 12vw;
     line-height: 1.25;
@@ -257,7 +269,7 @@
 
   #image-content {
     width: calc(35vw*0.9);
-    top: 10vh;
+    top: calc(100vh/12 + 3vh);
     left: 16.5vw;
   }
 
@@ -267,12 +279,10 @@
 
   #samurai {
     height: 55vh;
-    display: none; 
   }
 
   #yokai {
     height: 55vh;
-    display: none; 
   }
 
   #kanji-1 {
@@ -283,9 +293,9 @@
   }
 
   #kanji-2 {
-    font-size: 130px;
+    font-size: 150px;
     right: calc(var(--base-grid)*0.5);
-    top: calc(50vh*4);
+    top: calc(50vh*4.5);
     /* animation: kanji .4s linear 4s forwards; */
   }
   

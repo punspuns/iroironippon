@@ -10,7 +10,7 @@ $(window).scroll(function() {
      
     if (elementTop < scrollTop + winHeight && scrollTop > elementTop + elemHeight){
 		  $("#samurai").fadeOut();
-      $("#samurai").hide();
+      $("#samurai").hide(200);
 	}
 		
     else{
@@ -33,7 +33,7 @@ $(window).scroll(function() {
   
   else{
     $("#yokai").fadeOut();
-    $("#yokai").hide();
+    $("#yokai").hide(100);
 }
   
   
