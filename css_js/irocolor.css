@@ -282,7 +282,7 @@
   #kanji-2 {
     font-size: 160px;
     right: calc(var(--base-grid)*0.5);
-    top: 230vh;
+    top: 250vh;
     /* animation: kanji .4s linear 4s forwards; */
   }
   
