@@ -264,10 +264,12 @@
 
   #samurai {
     height: 55vh;
+    display: none; 
   }
 
   #yokai {
     height: 55vh;
+    display: none; 
   }
 
   #kanji-1 {
