@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
   $('#image-content').delay(2000).fadeIn(1000).removeClass('hidden');
   $('.kanji').delay(2000).fadeIn(1000).removeClass('hidden');

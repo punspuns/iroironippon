@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+
 :root {
   --base-grid: 100vw/14;
   --secondary-color: #151226;
@@ -29,6 +31,7 @@ canvas {
   font-family: myFont;
   src: url(osaka.woff);
 }
+
 
 
 .overlay {
@@ -88,13 +91,20 @@ canvas {
   /* animation: image-content .8s linear 2s forwards; */
 }
 
-.text-content h3 {
+.text-content h3{
   color: #F1C907;
+  font-family: myFont;
 }
 
-.text-content h4,
+.text-content h4 {
+  color: #FFF8F8;
+  font-family: myFont;
+}
+
+.text-content 
 p {
   color: #FFF8F8;
+  
 }
 
 #samurai {
