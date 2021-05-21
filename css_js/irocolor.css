@@ -102,6 +102,7 @@
 
   .kanji {
     display: none;
+    z-index: -1;
   }
   
   #kanji-1 {
@@ -458,9 +459,6 @@
       top: 40vh;
     }
 
-    .kanji {
-      z-index: -1;
-    }
     #kanji-1 {
       right: calc(var(--base-grid)*0.5);
       top: 70vh;
