@@ -1,6 +1,7 @@
 $(document).ready(function () {
   $('#image-content').delay(2000).fadeIn(1000).removeClass('hidden');
   $('.kanji').delay(2000).fadeIn(1000).removeClass('hidden');
+  $('.scroll').delay(2000).fadeIn(1000).removeClass('hidden');
 });
 
 $(window).scroll(function() {
@@ -12,7 +13,7 @@ $(window).scroll(function() {
 
      
     if (elementTop < scrollTop + winHeight && scrollTop > elementTop + elemHeight){
-		  $("#samurai, .image-1").fadeOut();
+		  $("#samurai, .image-1, .scroll").fadeOut();
       $("#samurai, .image-1").hide(200);
 	}
 		

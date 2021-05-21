@@ -14,99 +14,81 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="../css_js/irocolor.js"></script>
-  
+
 </head>
 
-<body class="overlay">
-  <!-- <div class="container">
-    <div class="row" id="iro-menu">
-      <div class="col-3">
-        <a class="navbar-brand" href="./homepage.html">
-          <img src="../images/icon/logo3b.svg" class="logo d-inline-block">
-        </a>
-      </div>
-    </div>
-  </div> -->
+<body class="overlay" style="background-color: #A694C8;">
   <div class="container-fluid h-100">
     <nav class="navbar navbar-light sticky-top " style="z-index: 1;">
       <a class="navbar-brand ps-3 pt-3 mb-sm-0" href="./homepage.html">
-        <img src="../images/icon/logo3b.svg" class="d-inline-block align-top logo " alt="">
-        
+        <img src="../images/icon/logo2b.svg" class="d-inline-block align-top logo " alt="">
+
       </a>
     </nav>
     <div class="row text-center " style="padding: 0;">
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
         <div class="d-flex flex-column justify-content-center align-items-center position-fixed">
           <div class="image-content">
-            <img id="maru" src="../images/content-image/gray-circle.svg">
-            <img id="image-content" class="image-1" src="../images/content-image/black-samurai.svg">
-            <img id="image-content" class="image-2" src="../images/content-image/black-yokai.svg">
+            <img id="maru" src="../images/content-image/purple-circle.svg">
+            <img id="image-content" class="image-1" src="../images/content-image/purple-butterfly.svg">
+            <img id="image-content" class="image-2" src="../images/content-image/purple-kimono.svg">
           </div>
-          <p id="color-name">黒い</p>
+          <p class="color-name" id="big-color">紫</p>
 
         </div>
       </div>
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
-        <div class="d-flex flex-column justify-content-center align-items-center min-vh position-fixed">
-            <div class="text-content " id="samurai">
-              <div data-aos="fade-up" data-aos-delay="2000" data-aos-anchor-placement="bottom-bottom" >
-                <h4>Black</h4>
-                <h3 class="pb-3" id="name">Samurai</h3>
-                <hr width="70px" style="color: antiquewhite; margin: auto;">
-                <p class="p-3" id="detail">Samurai were the hereditary military nobility and officer caste of medieval and early-modern
-                Japan from the 12th century to their abolition in the 1870s.<br>
-  
-                They were the well-paid retainers of the daimyo. They had high prestige and special privileges such as
-                wearing
-                two swords.</p>
-              </div>
-              
-              
+        <div class="d-flex flex-column justify-content-center align-items-start min-vh position-fixed">
+          <div class="text-content" id="samurai">
+            <div data-aos="fade-up" data-aos-delay="2000" data-aos-anchor-placement="bottom-bottom">
+              <h4>Purple</h4>
+              <h3 class="pb-3" id="name">Emperor Butterfly</h3>
+              <hr width="70px" style="color: antiquewhite; margin: auto;">
+              <p class="p-3" id="detail">Sasakia charonda, the Japanese emperor or great purple emperor, is a species of butterfly in the family Nymphalidae. S. charonda is the national butterfly of Japan, where it is known as 大紫 or オオムラサキ (ō-murasaki, "great purple").</p>
             </div>
-            <div class="text-content" id="yokai">
-              <div data-aos="fade-up">
-                <h4>Black</h4>
-                <h3 class="pb-3" id="name">Yokai</h3>
-                <hr width="70px" style="color: antiquewhite; margin: auto;">
-                <p class="p-3" id="detail">Yōkai (妖怪, "ghost", "phantom", "strange apparition") are a class of supernatural monsters and
-                  spirits in Japanese folklore.
-                  <br>
-                  The characteristics of yōkai range diversely from malevolent and mischievous entities believed to cause
-                  misfortune and harm, to those who are considered to bring good fortune to those who encounter them.</p>
-              </div>
-            </div> 
-              
-            <div class="button-control">
-              <a class="color-link position-relative" style="display: inline-block;" href="./intro.html">
-                <img class="color-icon" src="../images/icon/white-button.svg"> 
-                <p class="position-absolute" id="prev"><span style="color: gray;">See White</span></span>  </p>
-              </a>
-              <a class="color-link position-relative" style="width: 15vw; display: inline-block;" href="./intro.html">
-                <img class="color-icon" src="../images/icon/purple-button.svg"> 
-                <p class="position-absolute" id="next">See Purple</p>
-              </a>
+          </div>
+          <div class="text-content" id="yokai">
+            <div data-aos="fade-up">
+              <h4>Purple</h4>
+              <h3 class="pb-3" id="name">Kimono</h3>
+              <hr width="70px" style="color: antiquewhite; margin: auto;">
+              <p class="p-3" id="detail">The kimono is the Japanese traditional garment. Originally the word “kimono” referred to all types of clothing, but it has come to mean specifically the full-length traditional garments.  
+                <br>
+                Today, kimonos are most often worn by women, and on special occasions.</p>
             </div>
+          </div>
+
+          <div class="button-control">
+            <a class="color-link position-relative" style="display: inline-block;" href="./Black.html">
+              <img class="color-icon" src="../images/icon/pink-button.svg">
+              <p class="position-absolute" id="prev">See Pink</p>
+            </a>
+            <a class="color-link position-relative" style="width: 15vw; display: inline-block;" href="./Red.html">
+              <img class="color-icon" src="../images/icon/white-button.svg">
+              <p style="color: #2e2e2e;" class="position-absolute" id="next">See White</p>
+            </a>
+          </div>
         </div>
-        
-        
-        <div class="kanji" id="kanji-1">
-          <p>侍</p>
+
+
+        <div class="kanji kanji-md" id="kanji-1">
+          <p>大紫</p>
         </div>
-        <div class="kanji" id="kanji-2">
-          <p>妖怪</p>
+        <div class="kanji kanji-md" id="kanji-2">
+          <p>着物</p>
         </div>
-        
-        
-        </div>
-        
-        
+
 
       </div>
+
+
+
     </div>
+  </div>
 
   </div>
 
-  
+
 
   <script>
     AOS.init();
