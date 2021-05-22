@@ -452,8 +452,8 @@ p {
   }
 
   #maru {
-    width: 35vw;
-    top: calc(100vh/12);
+    width: 33vw;
+    top: calc(100vh/20.25);
     left: 33vw;
     /* transform: translate(-50%, -50%); */
   }
@@ -468,18 +468,18 @@ p {
   }
 
   #big-color {
-    left: 45vw;
-    top: calc(100vh/4.5);
+    left: 44vw;
+    top: calc(100vh/5);
   }
 
   #md-color {
-    left: 45vw;
-    top: calc(100vh/7.5);
+    left: 44vw;
+    top: calc(100vh/9);
   }
 
   #image-content {
-    width: calc(35vw*0.9);
-    top: calc(100vh/12 + 3vh);
+    width: calc(33vw*0.9);
+    top: calc(100vh/20.25 + 3vh);
     left: 16.5vw;
   }
 
