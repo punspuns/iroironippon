@@ -338,7 +338,7 @@ p {
 
 /*extra big monitor*/
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1440px) {
   .overlay {
     height: 340vh;
   }
@@ -362,7 +362,7 @@ p {
   }
 
   #md-color {
-    left: 42.5vw;
+    left: calc(100vw/2.35);
     top: 11vh;
   }
 
@@ -391,7 +391,7 @@ p {
 }
 
 /*big screen PC*/
-@media screen and (min-width: 1367px) and (max-width: 1599px) {
+@media screen and (min-width: 1367px) and (max-width: 1439px) {
   .overlay {
     height: 340vh;
   }
