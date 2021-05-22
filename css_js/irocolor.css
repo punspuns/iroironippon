@@ -44,6 +44,10 @@ canvas {
 
 }
 
+.highlight {
+  color: #ffe359;
+}
+
 
 #maru,
 .color-name,

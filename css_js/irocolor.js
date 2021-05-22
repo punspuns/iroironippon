@@ -1,10 +1,11 @@
 
 
 $(document).ready(function () {
-  $('#image-content').delay(2000).fadeIn(1000).removeClass('hidden');
+  $('#image-content').delay(2400).fadeIn(1000).removeClass('hidden');
   $('.kanji').delay(2000).fadeIn(1000).removeClass('hidden');
   $('.scroll').delay(2000).fadeIn(1000).removeClass('hidden');
 });
+
 
 $(window).scroll(function() {
     var winHeight = $(this).height();
@@ -39,6 +40,7 @@ $(window).scroll(function() {
   if (elementTop2 < scrollTop + winHeight && scrollTop < elementTop2 + elemHeight2){
     $("#yokai, .image-2").fadeIn();
     
+    
 }
   
   else{
@@ -68,3 +70,5 @@ $(window).scroll(function() {
     
 }
 });
+
+
