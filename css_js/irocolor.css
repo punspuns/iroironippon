@@ -445,7 +445,7 @@ p {
 
 
 /*small screen PC, vertical ipad*/
-@media screen and (min-width: 769px) and (max-width: 1366px) {
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
 
   .overlay {
     height: 320vh;
@@ -545,7 +545,152 @@ p {
 
 
 /*ipad, horizontal*/
-@media screen and (max-width: 768px) {}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .overlay {
+    height: 343vh;
+  }
+
+  #maru {
+    width: 55vw;
+    top: 19vh;
+    left: 22vw;
+  }
+
+  .color-name {
+    width: 12vw;
+    top: calc(100vh/4.5);
+    left: 40vw;
+    font-size: 20vw;
+    line-height: 1.25;
+    animation: on-load .8s ease-in-out forwards, heading .2s linear 2s forwards;
+  }
+
+  #big-color {
+    top: calc(100vh/3.5);
+  }
+
+  #md-color {
+    left: 40vw;
+    top: calc(100vh/4.75);
+  }
+
+  #image-content {
+    width: 55vw;
+    top: 3vh;
+    left: 22vw;
+  }
+
+  .text-content {
+    width: 90%;
+    font-size: 14px;
+    /* position: absolute; */
+    top: 38vh;
+  }
+
+  #kanji-1 {
+    right: calc(var(--base-grid)*0.5);
+    top: 80vh;
+    /* animation: kanji .4s linear 4s forwards; */
+  }
+
+  #kanji-2 {
+    right: calc(var(--base-grid)*0.25);
+    top: calc(70vh*3.5);
+    /* animation: kanji .4s linear 4s forwards; */
+  }
+
+  .kanji-lg {
+    font-size: 180px;
+  }
+
+  .kanji-md {
+    font-size: 100px;
+  }
+
+  .min-vh {
+    min-height: 150vh;
+  }
+
+
+  .button-control {
+    position: absolute;
+    top: 70vh;
+    left: -18vw;
+    width: 100vw;
+    height: 20vh;
+    display: none;
+  }
+
+  .color-link {
+    width: 80vw;
+    font-size: 14px;
+  }
+
+  #prev {
+    top: 43%;
+    left: 26%;
+    width: 50vw;
+  }
+
+  #next {
+    top: 43%;
+    left: -150%;
+    width: 50vw;
+  }
+
+  .scroll {
+    left: 50vw; 
+  }
+  
+
+
+  .color-icon {
+    width: 10vw;
+    height: 15vh;
+  }
+
+  @keyframes heading {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: .5;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  
+  @keyframes maru {
+    0% {
+      transform: translateY(-0vh);
+    }
+  
+    25% {
+      transform: translateY(-4vh);
+    }
+  
+    50% {
+      transform: translateY(-8vh);
+  
+    }
+  
+    75% {
+      transform: translateY(-12vh);
+  
+    }
+  
+    100% {
+      transform: translateY(-16vh);
+  
+    }
+  }
+}
+
+
 
 /*phones from iphone 6 to X*/
 @media screen and (max-width: 414px) {
