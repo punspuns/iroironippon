@@ -555,13 +555,13 @@ p {
 
   #maru {
     width: 60vw;
-    top: 21vh;
+    top: 19vh;
     left: 17vw;
   }
 
   .color-name {
     width: 12vw;
-    top: calc(100vh/4.25);
+    top: calc(100vh/4.5);
     left: 37vw;
     font-size: 20vw;
     line-height: 1.25;
@@ -574,12 +574,12 @@ p {
 
   #md-color {
     left: 37vw;
-    top: calc(100vh/4.25);
+    top: calc(100vh/4.75);
   }
 
   #image-content {
     width: 60vw;
-    top: 5vh;
+    top: 3vh;
     left: 17vw;
   }
 
@@ -587,7 +587,7 @@ p {
     width: 90%;
     font-size: 14px;
     /* position: absolute; */
-    top: 40vh;
+    top: 38vh;
   }
 
   #kanji-1 {
