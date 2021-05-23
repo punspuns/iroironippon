@@ -448,7 +448,7 @@ p {
 @media screen and (min-width: 1025px) and (max-width: 1366px) {
 
   .overlay {
-    height: 320vh;
+    height: 340vh;
   }
 
   #maru {
@@ -502,7 +502,7 @@ p {
 
   #kanji-2 {
     right: calc(var(--base-grid)*0.5);
-    top: calc(50vh*4.5);
+    top: calc(50vh*4.9);
     /* animation: kanji .4s linear 4s forwards; */
   }
 
