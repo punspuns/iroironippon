@@ -417,7 +417,7 @@ p {
   }
 
   #md-color {
-    left: 42vw;
+    left: calc(100vw/2.45);
     top: calc(100vh/7);
   }
 
