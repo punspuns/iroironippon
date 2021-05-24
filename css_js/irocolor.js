@@ -16,7 +16,7 @@ $(window).scroll(function() {
 
      
     if (elementTop < scrollTop + winHeight && scrollTop > elementTop + elemHeight){
-		  $("#samurai, .image-1, .scroll").fadeOut(100);
+		  $("#samurai, .image-1, .scroll").fadeOut(200);
       $("#samurai, .image-1").hide(50);
 	}
 		
@@ -44,7 +44,7 @@ $(window).scroll(function() {
 }
   
   else{
-    $("#yokai, .image-2").fadeOut(100);
+    $("#yokai, .image-2").fadeOut(200);
     $("#yokai, .image-2").hide(50);
     
 }
