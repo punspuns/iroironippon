@@ -7,9 +7,11 @@ Browsing instruction
 
 2. When browsing around each color pages, please scroll *slowly and easily* for the best experience.
 Scrolling effect is still buggy if scroll up and down too fast (because timing by js is difficult,
-in next implementation I will improve on scrolling effect more).
+in the next implementation I will improve on scrolling effect more).
 
-3. The website works best on most common landscape full-width resolution (FHD, HiDPI, MDPI, Ipad
+3. Please wait for the first animation of each page to run completely then start scrolling the page.
+
+4. The website works best on most common landscape full-width resolution (FHD, HiDPI, MDPI, Ipad
 Pro landscape, Ipad landscape),  Ipad portrait, and phones from from iPhone X and up.
 
 - Please test the website responsiveness with landscape PC first. Ipad portrait screen size (768px) is
