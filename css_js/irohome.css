@@ -225,7 +225,7 @@
   @keyframes intro-load {
     0% {
       opacity: 0;
-      transform: translateY(50%);
+      transform: translateY(60%);
     }
     70% {
       opacity: .7;
@@ -233,7 +233,7 @@
     }
     100% {
       opacity: 1;
-      transform: translateY(35%);
+      transform: translateY(30%);
     }
   }
   
@@ -257,6 +257,21 @@
     }
   }
 
+  @keyframes intro-load {
+    0% {
+      opacity: 0;
+      transform: translateY(60%);
+    }
+    70% {
+      opacity: .7;
+      transform: translateY(35%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(25%);
+    }
+  }
+
   /*big screen PC*/
   @media screen and (min-width: 1441px) {
     .icon-menu {
@@ -272,6 +287,21 @@
       height: calc(var(--base-grid)*17);
       transition: all .3s ease-in-out;
       fill: var(--colour-black);
+    }
+
+    @keyframes intro-load {
+      0% {
+        opacity: 0;
+        transform: translateY(50%);
+      }
+      70% {
+        opacity: .7;
+        transform: translateY(40%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(35%);
+      }
     }
   }
 

@@ -412,13 +412,13 @@ p {
   }
 
   #big-color {
-    left: calc(100vw/2.4);
+    left: calc(100vw/2.45);
     top: calc(100vh/5.4);
   }
 
   #md-color {
     left: calc(100vw/2.45);
-    top: calc(100vh/7);
+    top: calc(100vh/8);
   }
 
   #image-content {
